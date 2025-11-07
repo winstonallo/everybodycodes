@@ -1,0 +1,16 @@
+[package]
+name = "quest02"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rayon = "1.11.0"
+
+[[bin]]
+name = "part1"
+
+[[bin]]
+name = "part2"
+
+[[bin]]
+name = "part3"
