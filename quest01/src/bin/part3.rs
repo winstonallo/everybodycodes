@@ -1,7 +1,7 @@
 use quest01::{Data, Move};
 
 fn main() -> std::io::Result<()> {
-    let mut data = Data::try_from("./notes/part3.txt")?;
+    let mut data = Data::try_from(std::path::Path::new("./notes/part3.txt"))?;
 
     let len = data.names.len() as isize;
 

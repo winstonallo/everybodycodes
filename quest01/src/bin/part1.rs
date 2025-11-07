@@ -1,7 +1,7 @@
 use quest01::{Data, Move};
 
 fn main() -> std::io::Result<()> {
-    let data = Data::try_from("./notes/part1.txt")?;
+    let data = Data::try_from(std::path::Path::new("./notes/part1.txt"))?;
 
     let max_idx = data.names.len() - 1;
     let mut curr_idx = 0;

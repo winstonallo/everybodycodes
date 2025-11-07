@@ -30,10 +30,10 @@ pub struct Data {
     pub names: Vec<String>,
 }
 
-impl TryFrom<&str> for Data {
+impl TryFrom<&std::path::Path> for Data {
     type Error = std::io::Error;
 
-    fn try_from(value: &str) -> Result<Self, std::io::Error> {
+    fn try_from(value: &std::path::Path) -> Result<Self, std::io::Error> {
         let content = std::fs::read_to_string(value)?;
         let content = content.split("\n").collect::<Vec<&str>>();
         Ok(Self {
