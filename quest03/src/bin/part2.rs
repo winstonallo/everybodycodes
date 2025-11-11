@@ -1,7 +1,7 @@
 use quest03::NumberList;
 
 fn main() -> std::io::Result<()> {
-    let mut list = NumberList::try_from(std::path::Path::new("./notes/part2.txt"))?;
+    let mut list = NumberList::try_from(include_str!("../../notes/part2.txt"))?;
     list.0.sort();
     list.0.dedup();
 

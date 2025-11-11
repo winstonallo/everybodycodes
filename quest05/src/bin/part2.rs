@@ -3,7 +3,7 @@ use std::usize;
 use quest05::VecNotes;
 
 fn main() -> std::io::Result<()> {
-    let notes = VecNotes::try_from(std::path::Path::new("./notes/part2.txt"))?;
+    let notes = VecNotes::try_from(include_str!("../../notes/part2.txt"))?;
 
     let mut max_quality = 0;
     let mut min_quality = usize::MAX;

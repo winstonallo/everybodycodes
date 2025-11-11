@@ -1,7 +1,7 @@
 use quest05::Notes;
 
 fn main() -> std::io::Result<()> {
-    let notes = Notes::try_from(std::path::Path::new("./notes/part1.txt"))?;
+    let notes = Notes::try_from(include_str!("../../notes/part1.txt"))?;
 
     let mut segments = vec![vec![0, notes.nums[0], 0]];
 

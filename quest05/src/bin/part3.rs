@@ -3,7 +3,7 @@ use std::usize;
 use quest05::{Sword, VecNotes};
 
 fn main() -> std::io::Result<()> {
-    let notes = VecNotes::try_from(std::path::Path::new("./notes/part3.txt"))?;
+    let notes = VecNotes::try_from(include_str!("../../notes/part3.txt"))?;
 
     let mut swords = Vec::new();
     for note in notes.notes {

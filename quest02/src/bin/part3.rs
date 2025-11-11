@@ -2,7 +2,7 @@ use quest02::ComplexNumber;
 use rayon::prelude::*;
 
 fn main() -> std::io::Result<()> {
-    let top_left = ComplexNumber::try_from(std::path::Path::new("./notes/part3.txt"))?;
+    let top_left = ComplexNumber::try_from(include_str!("../../notes/part3.txt"))?;
 
     let divisor = ComplexNumber::new(100000, 100000);
 

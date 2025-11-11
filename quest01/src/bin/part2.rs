@@ -1,7 +1,7 @@
 use quest01::{Data, Move};
 
 fn main() -> std::io::Result<()> {
-    let data = Data::try_from(std::path::Path::new("./notes/part2.txt"))?;
+    let data = Data::try_from(include_str!("../../notes/part2.txt"))?;
 
     let len = data.names.len() as isize;
     let mut curr_idx = 0;

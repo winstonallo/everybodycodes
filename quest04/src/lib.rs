@@ -1,10 +1,10 @@
 #[derive(Debug)]
 pub struct GearList(pub Vec<i64>);
 
-impl TryFrom<&std::path::Path> for GearList {
+impl TryFrom<&str> for GearList {
     type Error = std::io::Error;
 
-    fn try_from(value: &std::path::Path) -> Result<Self, Self::Error> {
+    fn try_from(value: &str) -> Result<Self, Self::Error> {
         Ok(Self(
             std::fs::read_to_string(value)?
                 .split("\n")
@@ -23,10 +23,10 @@ pub enum Gear {
     Mounted(usize, usize),
 }
 
-impl TryFrom<&std::path::Path> for MountedGearList {
+impl TryFrom<&str> for MountedGearList {
     type Error = std::io::Error;
 
-    fn try_from(value: &std::path::Path) -> Result<Self, Self::Error> {
+    fn try_from(value: &str) -> Result<Self, Self::Error> {
         Ok(Self(
             std::fs::read_to_string(value)?
                 .split("\n")

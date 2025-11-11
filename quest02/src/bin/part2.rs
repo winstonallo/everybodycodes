@@ -1,7 +1,7 @@
 use quest02::ComplexNumber;
 
 fn main() -> std::io::Result<()> {
-    let top_left = ComplexNumber::try_from(std::path::Path::new("./notes/part2.txt"))?;
+    let top_left = ComplexNumber::try_from(include_str!("../../notes/part2.txt"))?;
     let mut points = 0;
 
     for y in 0..101 {

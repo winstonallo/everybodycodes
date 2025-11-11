@@ -1,7 +1,7 @@
 use quest02::ComplexNumber;
 
 fn main() -> std::io::Result<()> {
-    let a = ComplexNumber::try_from(std::path::Path::new("./notes/part1.txt"))?;
+    let a = ComplexNumber::try_from(include_str!("../../notes/part1.txt"))?;
     let ten_ten = ComplexNumber::new(10, 10);
     let mut r = ComplexNumber::default();
 

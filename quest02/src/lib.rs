@@ -22,10 +22,10 @@ impl ComplexNumber {
     }
 }
 
-impl TryFrom<&std::path::Path> for ComplexNumber {
+impl TryFrom<&str> for ComplexNumber {
     type Error = std::io::Error;
 
-    fn try_from(value: &std::path::Path) -> Result<Self, Self::Error> {
+    fn try_from(value: &str) -> Result<Self, Self::Error> {
         let content = &std::fs::read_to_string(value)?[3..];
         let content = &content[..content.len() - 2]
             .split(",")

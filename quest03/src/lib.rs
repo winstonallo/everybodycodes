@@ -1,9 +1,9 @@
 #[derive(Debug)]
 pub struct NumberList(pub Vec<i64>);
 
-impl TryFrom<&std::path::Path> for NumberList {
+impl TryFrom<&str> for NumberList {
     type Error = std::io::Error;
-    fn try_from(value: &std::path::Path) -> Result<Self, Self::Error> {
+    fn try_from(value: &str) -> Result<Self, Self::Error> {
         let content = std::fs::read_to_string(value)?
             .split(",")
             .filter_map(|x| x.parse::<i64>().ok())

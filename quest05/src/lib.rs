@@ -9,10 +9,10 @@ pub struct Notes {
     pub nums: Vec<usize>,
 }
 
-impl TryFrom<&std::path::Path> for Notes {
+impl TryFrom<&str> for Notes {
     type Error = std::io::Error;
 
-    fn try_from(value: &std::path::Path) -> Result<Self, Self::Error> {
+    fn try_from(value: &str) -> Result<Self, Self::Error> {
         let content = std::fs::read_to_string(value)?;
         let split = content.split(":").collect::<Vec<&str>>();
         Ok(Self {
@@ -37,10 +37,10 @@ pub struct VecNotes {
     pub notes: Vec<Notes>,
 }
 
-impl TryFrom<&std::path::Path> for VecNotes {
+impl TryFrom<&str> for VecNotes {
     type Error = std::io::Error;
 
-    fn try_from(value: &std::path::Path) -> Result<Self, Self::Error> {
+    fn try_from(value: &str) -> Result<Self, Self::Error> {
         Ok(Self {
             notes: std::fs::read_to_string(value)?
                 .split("\n")

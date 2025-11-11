@@ -1,7 +1,7 @@
 use quest04::{Gear, MountedGearList};
 
 fn main() -> std::io::Result<()> {
-    let gears = MountedGearList::try_from(std::path::Path::new("./notes/part3.txt"))?;
+    let gears = MountedGearList::try_from(include_str!("../../notes/part3.txt"))?;
 
     let mut running_ratio: f64 = 1.0;
 
