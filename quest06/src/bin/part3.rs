@@ -1,4 +1,5 @@
 use quest06::{Notes, Participant, Profession};
+
 fn main() -> std::io::Result<()> {
     let content = Notes::try_from(include_str!("../../notes/part3.txt"))?;
     let mut pairs = 0;
