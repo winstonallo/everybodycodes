@@ -1,0 +1,26 @@
+Balsyx,Malithurath,Baltor,Malithisis,Balcarth,Malithcarth,Palthtor,Baltor,Felmartor,Felmarcarth,Felmarmirath,Malithxeth,Zraalmirath,Balisis,Xilisis,Palthynn,Vyrlxeth,Zraalynn,Zraalxeth,Yndxeth,Malithsyx,Malithcion,Vyrlynn,Balurath,Yndtor,Yndmirath,Balmirath,Palthurath,Malithxeth,Zraalsyx,Xilmirath,Palthirin,Malithsyx,Balynn,Felmarxeth,Malithcion,Balcion,Balirin,Palthmirath,Malithirin,Balcarth,Balcion,Felmarurath,Felmarynn,Balsyx,Zraalcarth,Xiltor,Zraalisis,Yndcarth,Vyrlirin,Zraalirin,Palthsyx,Malithisis,Vyrlcarth,Felmarsyx,Malithmirath,Felmaririn,Felmarcion,Malithynn,Zraaltor,Palthisis,Balynn,Malithmirath,Zraalurath,Palthcion,Xilcion,Malithcarth,Balxeth,Felmarisis,Xilurath,Yndcion,Malithtor,Xilirin,Vyrltor,Balxeth,Xilynn,Vyrlmirath,Yndirin,Yndurath,Palthxeth,Zraalcion,Malithtor,Palthcarth,Xilcarth,Malithynn,Vyrlsyx,Xilxeth,Yndisis,Malithurath,Malithirin,Yndynn,Balirin,Yndsyx,Vyrlisis,Balmirath,Xilsyx,Balisis,Vyrlcion,Balurath,Vyrlurath
+
+x > e
+P > a
+F > e
+Y > n
+M > a
+a > l,t,r,v,a
+V > y
+n > n,v
+m > i,a
+l > t,y,i,c,m,s,u,x
+t > h,o
+d > y,i,c,m,s,u,t,x
+o > r,n
+r > i,a,t,l,v,y,c,m,s,u,x
+h > t,y,i,c,m,s,u,x
+X > i
+B > a
+i > v,r,n,o,s,t
+Z > r
+y > n,x,v
+u > r
+e > t,v
+s > y,i
+c > i,a
